@@ -5,6 +5,7 @@ import ProductImage from "./ProductImage.jsx";
 import ProductPrice from "./ProductPrice.jsx";
 import NotFound from "./NotFound.jsx";
 import { useNavigate } from "react-router-dom";
+import AddToCart from "./AddToCart.jsx";
 
 export const ProductDetail = () => {
   const { id } = useParams();
@@ -30,6 +31,7 @@ export const ProductDetail = () => {
         haveDiscount={product.haveDiscount}
       />
       <p>{product.description}</p>
+      <AddToCart productId={id} />
       <button
         className="bg-green-600 text-white p-2 rounded-lg hover:bg-green-700"
         onClick={backToProducts}

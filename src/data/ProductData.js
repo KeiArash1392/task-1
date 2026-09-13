@@ -1,5 +1,5 @@
 const response = await fetch(
-  "https://6aa59c041397053d42bbb229.mockapi.io/products",
+  "https://6aa6628bd7765db985075a6c.mockapi.io/products",
 );
 const data = await response.json();
 
